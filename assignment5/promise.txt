@@ -1,0 +1,45 @@
+Question 1:
+p.then(value => console.log(value));
+
+Question 2:
+p.catch(error => console.log(error));
+
+Question 3:
+p.then(value => console.log(value));
+
+Question 4:
+p.then(value => console.log(value.name));
+
+Question 5:
+p.catch(error => console.log(error));
+
+Question 6:
+p.finally(() => console.log("Promise settled"));
+
+Question 7:
+p.then(value => console.log(value * 2));
+
+Question 8:
+p
+  .catch(() => 0)
+  .then(value => console.log(value));
+
+Question 9:
+Promise.all(promises)
+  .then(values => console.log(values));
+
+Question 10:
+Promise.race(promises)
+  .then(value => console.log(value));
+
+Bonus Question:
+p
+  .then(value => {
+    return new Promise(resolve => {
+      setTimeout(() => {
+        resolve('Hello ' + value);
+      }, 1000);
+    });
+  })
+  .then(result => console.log(result));
+
